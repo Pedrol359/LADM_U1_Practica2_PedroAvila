@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".cantidadCriptos">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de criptos a comprar"
+        android:layout_marginTop="90dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cantidad"
+        android:textAlignment="center"
+        android:hint="Cantidad criptos"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="55dp"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tarjeta Credito o debito"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/numeroTarjeta"
+        android:textAlignment="center"
+        android:hint="Ingresa el numero de tu tarjeta"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="55dp"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:maxLength="16"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de caducidad"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fechaCaducidad"
+        android:textAlignment="center"
+        android:hint="mm/aa"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="55dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Codigo CVC o CVV"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/codigoCvc"
+        android:textAlignment="center"
+        android:hint="Ingresa el codigo"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="55dp"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:maxLength="3"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+            android:id="@+id/comprarCriptos"
+        android:text="Comprar"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="110dp"
+
+        />
+</LinearLayout>

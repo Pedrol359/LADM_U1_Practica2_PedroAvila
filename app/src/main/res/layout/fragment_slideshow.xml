@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de criptos a vender"
+        android:layout_marginTop="90dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cantidad"
+        android:textAlignment="center"
+        android:hint="Cantidad criptos"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="55dp"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Codigó de transferencia interbancaria (STP)"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stp"
+        android:textAlignment="center"
+        android:hint="Ingresa tu STP"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="55dp"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:maxLength="18"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona una criptomoneda"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/itemMenu"
+
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/vender"
+        android:text="Vender"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="110dp"
+
+        />
+</LinearLayout>
